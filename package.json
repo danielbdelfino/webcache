@@ -1,0 +1,23 @@
+{
+  "name": "webcache",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2-runtime ./src/server.js --name webcache --watch",
+    "stop": "pm2 stop ./src/server.js",
+    "debug": "nodemon --inspect ./src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "jade": "^1.11.0",
+    "memory-cache": "^0.2.0",
+    "puppeteer": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "8.1.x"
+  },
+  "license": "MIT"
+}
